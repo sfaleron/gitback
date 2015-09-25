@@ -1,0 +1,3 @@
+#!/bin/sh
+# run when mobile is remote, from mobile
+ssh -L 2222:localhost:22 -R *:2222:localhost:22 homebase.net python busy.py

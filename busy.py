@@ -10,6 +10,9 @@ n = len(fg)
 
 i = 0
 
+# set window title (and icon)
+print chr(0x1b) + ']0;Gitback' + chr(7)
+
 while True:
    print bg[:i]+fg+bg[i+n:]+bg[i+n:]+fg+bg[:i]+'\r',
 
